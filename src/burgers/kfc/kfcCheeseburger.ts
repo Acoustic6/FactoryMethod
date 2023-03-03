@@ -1,11 +1,11 @@
-import { Burger } from "../burger";
+import { Burger } from '../burger';
 
 export class KfcCheeseburger extends Burger  {
     constructor() {
-        super('KFC Чизбургер', 'Фирменный соус KFC', 'chicken', true);
+        super('KFC Чизбургер', 'Фирменный соус "KFC"', 'chicken', true);
     }
 
     public box(): void {
-        console.log(`Упаковываем ${this.name} в специальную упаковку "KFC"`);
+        console.log(`Упаковываем ${this.name} в специальную упаковку 'KFC'`);
     }
 }

@@ -1,4 +1,4 @@
-import { Burger } from "../burger";
+import { Burger } from '../burger';
 
 export class ChickenBurger extends Burger  {
     constructor() {
@@ -9,9 +9,9 @@ export class ChickenBurger extends Burger  {
         console.log(`Собираем ${this.name}`);
         console.log(`Добавляем ${this.sauce}`);
         if (this.isCheeseAdded) {
-            console.log("Добавляем сыр");
+            console.log('Добавляем сыр');
         }
-        console.log(`Добавляем ${this.meat === "beef" ? 'говяжью котлету' : 'куриную котлету'}`);
+        console.log(`Добавляем ${this.meat === 'beef' ? 'говяжью котлету' : 'куриную котлету'}`);
     }
 
     public box(): void {

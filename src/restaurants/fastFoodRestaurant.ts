@@ -1,5 +1,5 @@
-import { Burger } from "../burgers/burger";
-import { burgerType } from "../types";
+import { Burger } from '../burgers/burger';
+import { burgerType } from '../types';
 
 export abstract class FastFoodRestaurant {
     public orderBurger(type: burgerType): Burger {

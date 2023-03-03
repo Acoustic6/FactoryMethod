@@ -1,4 +1,4 @@
-import { Burger } from "../burger";
+import { Burger } from '../burger';
 
 export class Cheeseburger extends Burger  {
     constructor() {

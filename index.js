@@ -1,0 +1,21 @@
+"use strict";
+exports.__esModule = true;
+var vkusnoITochka_1 = require("./src/restaurants/vkusnoITochka");
+var kfc_1 = require("./src/restaurants/kfc");
+// replace '' to ''
+var order = [];
+var vkusnoITochka = new vkusnoITochka_1.VkusnoITochka();
+var cheeseburger = vkusnoITochka.orderBurger('cheeseburger');
+console.log("\u0414\u043E\u0431\u0430\u0432\u043B\u044F\u0435\u043C ".concat(cheeseburger.getName(), " \u0432 \u043A\u043E\u0440\u0437\u0438\u043D\u0443\n"));
+order.push(cheeseburger);
+var chickenBurger = vkusnoITochka.orderBurger('chickenBurger');
+console.log("\u0414\u043E\u0431\u0430\u0432\u043B\u044F\u0435\u043C ".concat(chickenBurger.getName(), " \u0432 \u043A\u043E\u0440\u0437\u0438\u043D\u0443\n"));
+order.push(chickenBurger);
+var kfc = new kfc_1.Kfc();
+var kfcCheeseburger = kfc.orderBurger('cheeseburger');
+console.log("\u0414\u043E\u0431\u0430\u0432\u043B\u044F\u0435\u043C ".concat(kfcCheeseburger.getName(), " \u0432 \u043A\u043E\u0440\u0437\u0438\u043D\u0443\n"));
+order.push(kfcCheeseburger);
+var kfcChickenBurger = kfc.orderBurger('chickenBurger');
+console.log("\u0414\u043E\u0431\u0430\u0432\u043B\u044F\u0435\u043C ".concat(kfcChickenBurger.getName(), " \u0432 \u043A\u043E\u0440\u0437\u0438\u043D\u0443\n"));
+order.push(kfcChickenBurger);
+console.log("\u0412\u0430\u0448 \u0437\u0430\u043A\u0430\u0437: ".concat(order.map(function (burger) { return burger.getName(); }).join(', ')));

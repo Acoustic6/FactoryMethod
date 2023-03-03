@@ -15,16 +15,16 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 exports.__esModule = true;
-exports.KfcCheeseburger = void 0;
+exports.Cheeseburger = void 0;
 var burger_1 = require("../burger");
-var KfcCheeseburger = /** @class */ (function (_super) {
-    __extends(KfcCheeseburger, _super);
-    function KfcCheeseburger() {
-        return _super.call(this, 'KFC Чизбургер', 'Фирменный соус KFC', 'chicken', true) || this;
+var Cheeseburger = /** @class */ (function (_super) {
+    __extends(Cheeseburger, _super);
+    function Cheeseburger() {
+        return _super.call(this, 'Чизбургер', 'Фирменный соус "Вкусно и точка"', 'beef', true) || this;
     }
-    KfcCheeseburger.prototype.box = function () {
-        console.log("\u0423\u043F\u0430\u043A\u043E\u0432\u044B\u0432\u0430\u0435\u043C ".concat(this.name, " \u0432 \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u044C\u043D\u0443\u044E \u0443\u043F\u0430\u043A\u043E\u0432\u043A\u0443 \"KFC\""));
+    Cheeseburger.prototype.box = function () {
+        console.log("\u0423\u043F\u0430\u043A\u043E\u0432\u044B\u0432\u0430\u0435\u043C ".concat(this.name, " \u0432 \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u044C\u043D\u0443\u044E \u0443\u043F\u0430\u043A\u043E\u0432\u043A\u0443 \"\u0412\u043A\u0443\u0441\u043D\u043E \u0438 \u0442\u043E\u0447\u043A\u0430\""));
     };
-    return KfcCheeseburger;
+    return Cheeseburger;
 }(burger_1.Burger));
-exports.KfcCheeseburger = KfcCheeseburger;
+exports.Cheeseburger = Cheeseburger;

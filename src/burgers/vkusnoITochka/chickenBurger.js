@@ -15,24 +15,24 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 exports.__esModule = true;
-exports.KfcChickenBurger = void 0;
+exports.ChickenBurger = void 0;
 var burger_1 = require("../burger");
-var KfcChickenBurger = /** @class */ (function (_super) {
-    __extends(KfcChickenBurger, _super);
-    function KfcChickenBurger() {
-        return _super.call(this, 'KFC Чикенбургер', 'Фирменный соус "KFC"', 'chicken', false) || this;
+var ChickenBurger = /** @class */ (function (_super) {
+    __extends(ChickenBurger, _super);
+    function ChickenBurger() {
+        return _super.call(this, 'Чикенбургер', 'Фирменный соус "Вкусно и точка"', 'chicken', true) || this;
     }
-    KfcChickenBurger.prototype.combine = function () {
-        console.log("\u0414\u043E\u0431\u0430\u0432\u043B\u044F\u0435\u043C ".concat(this.name));
+    ChickenBurger.prototype.combine = function () {
+        console.log("\u0421\u043E\u0431\u0438\u0440\u0430\u0435\u043C ".concat(this.name));
         console.log("\u0414\u043E\u0431\u0430\u0432\u043B\u044F\u0435\u043C ".concat(this.sauce));
         if (this.isCheeseAdded) {
             console.log('Добавляем сыр');
         }
         console.log("\u0414\u043E\u0431\u0430\u0432\u043B\u044F\u0435\u043C ".concat(this.meat === 'beef' ? 'говяжью котлету' : 'куриную котлету'));
     };
-    KfcChickenBurger.prototype.box = function () {
-        console.log("\u0423\u043F\u0430\u043A\u043E\u0432\u044B\u0432\u0430\u0435\u043C ".concat(this.name, " \u0432 \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u044C\u043D\u0443\u044E \u0443\u043F\u0430\u043A\u043E\u0432\u043A\u0443 'KFC'"));
+    ChickenBurger.prototype.box = function () {
+        console.log("\u0423\u043F\u0430\u043A\u043E\u0432\u044B\u0432\u0430\u0435\u043C ".concat(this.name, " \u0432 \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u044C\u043D\u0443\u044E \u0443\u043F\u0430\u043A\u043E\u0432\u043A\u0443 \"\u0412\u043A\u0443\u0441\u043D\u043E \u0438 \u0442\u043E\u0447\u043A\u0430\""));
     };
-    return KfcChickenBurger;
+    return ChickenBurger;
 }(burger_1.Burger));
-exports.KfcChickenBurger = KfcChickenBurger;
+exports.ChickenBurger = ChickenBurger;
