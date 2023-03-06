@@ -14,7 +14,7 @@ export abstract class Burger {
     }
 
     public prepare(): void {
-        console.log(`Подготавливаем ингридиенты для ${this.name}`);
+        console.log(`Подготавливаем ингредиенты для ${this.name}`);
         console.log(`Подготавливаем ${this.meat === 'beef' ? 'говяжью котлету' : 'куриную котлету'}`);
         console.log(`Подготавливаем ${this.sauce}`);
         if (this.isCheeseAdded) {
